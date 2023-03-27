@@ -1,13 +1,8 @@
 package com.ligeng.flowabledemo;
 
 import org.apache.commons.dbcp.BasicDataSource;
-import org.flowable.engine.ProcessEngine;
 import org.flowable.engine.ProcessEngineConfiguration;
 import org.flowable.engine.impl.cfg.StandaloneProcessEngineConfiguration;
-import org.junit.Test;
-
-import javax.sql.DataSource;
-
 
 public class InitDBTest {
     public static void main(String[] args) {
