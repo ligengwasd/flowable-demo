@@ -35,14 +35,14 @@
         </sequenceFlow>
 
         <serviceTask id="externalSystemCall" name="Enter holidays in external system"
-                     flowable:class="com.ligeng.flowabledemo.CallExternalSystemDelegate"/>
+                     flowable:class="com.ligeng.flowabledemo.flowabletask.CallExternalSystemDelegate"/>
         <sequenceFlow sourceRef="externalSystemCall" targetRef="holidayApprovedTask"/>
 
         <userTask id="holidayApprovedTask" name="Holiday approved"/>
         <sequenceFlow sourceRef="holidayApprovedTask" targetRef="approveEnd"/>
 
         <serviceTask id="sendRejectionMail" name="Send out rejection email"
-                     flowable:class="org.flowable.SendRejectionMail"/>
+                     flowable:class="com.ligeng.flowabledemo.flowabletask.SendRejectionMail"/>
         <sequenceFlow sourceRef="sendRejectionMail" targetRef="rejectEnd"/>
 
         <endEvent id="approveEnd"/>

@@ -1,4 +1,4 @@
-package com.ligeng.flowabledemo;
+package com.ligeng.flowabledemo.flowabletask;
 
 import org.flowable.engine.delegate.DelegateExecution;
 import org.flowable.engine.delegate.JavaDelegate;
