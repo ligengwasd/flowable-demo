@@ -12,6 +12,7 @@ public class RepositoryServiceDemo {
         RepositoryService repositoryService = processEngine.getRepositoryService();
         Deployment deployment = repositoryService.createDeployment()
                 .addClasspathResource("holiday-request.bpmn20.xml")
+                .key("holidayRequest")
                 .deploy();
         System.out.println(new Gson().toJson(deployment));
     }
